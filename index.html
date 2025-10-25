@@ -350,25 +350,24 @@
     <!-- Map container -->
     <div id="map-container">
       <div id="map"></div>
-      <div id="scenario-label"></div>
+      <div id="scenario-label">Scenario: SSP1-2.6</div>
       <script>
           const scenario = document.getElementById('scenario-select');
           const scenario_label = document.getElementById('scenario-label');
 
           // Update the label whenever the scenario value changes
           scenario.addEventListener('change', function() {
-          scenario_label.textContent = scenario.value;
+          scenario_label.textContent = "Scenario: " + scenario.value;
           });
         </script>
-      <div id="legend-button">Legend</div>
       <div id="legend-panel">
         <div class="legend-bar"></div>
         <div class="legend-labels">
-          <span>150 cm</span>
-          <span>83 cm</span>
-          <span>0 cm</span>
-          <span>-50 cm</span>
-          <span>-83 cm</span>
+          <span>150 cm</span>
+          <span>83 cm</span>
+          <span>0 cm</span>
+          <span>-50 cm</span>
+          <span>-83 cm</span>
         </div>
       </div>
     </div>
@@ -425,21 +424,6 @@
           panel.style.display = panel.id === target ? 'block' : 'none';
         });
       });
-    });
-
-    // Update scenario label when scenario changes
-    document.getElementById('scenario-select').addEventListener('change', function() {
-      var value = this.value;
-      document.getElementById('scenario-label').textContent = value;
-    });
-
-    // Update time label when slider moves
-    var timeSlider = document.getElementById('time-slider');
-    var timeLabel = document.getElementById('time-label');
-
-    // Use input so it updates while dragging, and format the display
-    timeSlider.addEventListener('input', function() {
-      timeLabel.textContent = 'Year: ' + this.value;
     });
 
     // Initialize label on load (in case value changed or set programmatically)

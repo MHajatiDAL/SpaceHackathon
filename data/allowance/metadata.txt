@@ -1,0 +1,39 @@
+# Global attributes
+# 
+# creation_date:: 07-Nov-2022 11:36:55
+# contact:: Li.Zhai@dfo-mpo.gc.ca
+#
+# Coordinates
+#   time
+#     standard_name:: time
+#     long_name:: time
+#     axis:: T
+#   lat
+#     standard_name:: latitude
+#     long_name:: latitude
+#     units:: degrees_north
+#     axis:: Y
+#   lon
+#     standard_name:: longitude
+#     long_name:: longitude
+#     units:: degrees_east
+#     axis:: X
+#
+# Data variables
+#   ssp585_allowance_p50
+#     standard_name:: vertical_allowance
+#     long_name:: recommended_changes_in_the_elevation_of_coastal_infrastructure
+#     units:: cm
+#   ssp126_allowance_p50
+#     standard_name:: vertical_allowance
+#     long_name:: recommended_changes_in_the_elevation_of_coastal_infrastructure
+#     units:: cm
+#   ssp245_allowance_p50
+#     standard_name:: vertical_allowance
+#     long_name:: recommended_changes_in_the_elevation_of_coastal_infrastructure
+#     units:: cm
+#   ssp370_allowance_p50
+#     standard_name:: vertical_allowance
+#     long_name:: recommended_changes_in_the_elevation_of_coastal_infrastructure
+#     units:: cm
+#

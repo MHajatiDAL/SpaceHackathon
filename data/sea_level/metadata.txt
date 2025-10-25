@@ -1,0 +1,85 @@
+# Global attributes
+# 
+# Conventions:: CF-1.7
+# domain:: Canada
+# institution:: Natural Resources Canada
+# long_name:: relative sea-level change
+# mip_era:: CMIP6
+#
+# Coordinates
+#   time
+#     axis:: T
+#     standard_name:: time
+#   lon
+#     axis:: X
+#     long_name:: longitude
+#     standard_name:: longitude
+#     units:: degrees_east
+#   lat
+#     axis:: Y
+#     long_name:: latitude
+#     standard_name:: latitude
+#     units:: degrees_north
+#
+# Data variables
+#   ssp126_slr_p17
+#     long_name:: relative sea-level change
+#     units:: cm
+#     grid_mapping:: spatial_ref
+#   ssp126_slr_p50
+#     long_name:: relative sea-level change
+#     units:: cm
+#     grid_mapping:: spatial_ref
+#   ssp126_slr_p83
+#     long_name:: relative sea-level change
+#     units:: cm
+#     grid_mapping:: spatial_ref
+#   ssp245_slr_p17
+#     long_name:: relative sea-level change
+#     units:: cm
+#     grid_mapping:: spatial_ref
+#   ssp245_slr_p50
+#     long_name:: relative sea-level change
+#     units:: cm
+#     grid_mapping:: spatial_ref
+#   ssp245_slr_p83
+#     long_name:: relative sea-level change
+#     units:: cm
+#     grid_mapping:: spatial_ref
+#   ssp370_slr_p17
+#     long_name:: relative sea-level change
+#     units:: cm
+#     grid_mapping:: spatial_ref
+#   ssp370_slr_p50
+#     long_name:: relative sea-level change
+#     units:: cm
+#     grid_mapping:: spatial_ref
+#   ssp370_slr_p83
+#     long_name:: relative sea-level change
+#     units:: cm
+#     grid_mapping:: spatial_ref
+#   ssp585_slr_p17
+#     long_name:: relative sea-level change
+#     units:: cm
+#     grid_mapping:: spatial_ref
+#   ssp585_slr_p50
+#     long_name:: relative sea-level change
+#     units:: cm
+#     grid_mapping:: spatial_ref
+#   ssp585_slr_p83
+#     long_name:: relative sea-level change
+#     units:: cm
+#     grid_mapping:: spatial_ref
+#   ssp585lowConf_slr_p83
+#     long_name:: relative sea-level change
+#     units:: cm
+#     grid_mapping:: spatial_ref
+#   ssp585highEnd_slr_p98
+#     long_name:: relative sea-level change
+#     units:: cm
+#     grid_mapping:: spatial_ref
+#   uplift
+#     long_name:: uplift
+#     units:: cm
+#     grid_mapping:: spatial_ref
+#

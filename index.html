@@ -298,7 +298,7 @@
       </div>
       <div class="section">
         <h3>Time Period (Year)</h3>
-        <input type="range" id="time-slider" min="2020" max="2100" value="2020" steps="10" />
+        <input type="range" id="time-slider" min="2020" max="2100" value="2020" step="10"/>
         <label id="time-label">Year: 2020</label>
 
         <script>
@@ -350,7 +350,16 @@
     <!-- Map container -->
     <div id="map-container">
       <div id="map"></div>
-      <div id="scenario-label">SSP1–2.6</div>
+      <div id="scenario-label"></div>
+      <script>
+          const scenario = document.getElementById('scenario-select');
+          const scenario_label = document.getElementById('scenario-label');
+
+          // Update the label whenever the scenario value changes
+          scenario.addEventListener('change', function() {
+          scenario_label.textContent = scenario.value;
+          });
+        </script>
       <div id="legend-button">Legend</div>
       <div id="legend-panel">
         <div class="legend-bar"></div>

@@ -298,8 +298,19 @@
       </div>
       <div class="section">
         <h3>Time Period (Year)</h3>
-        <input type="range" id="time-slider" min="2020" max="2100" value="2040" />
-        <label id="time-label">2040</label>
+        <input type="range" id="time-slider" min="2020" max="2100" value="2020" steps="10" />
+        <label id="time-label">Year: 2020</label>
+
+        <script>
+          const slider = document.getElementById('time-slider');
+          const label = document.getElementById('time-label');
+
+          // Update the label whenever the slider value changes
+          slider.addEventListener('input', function() {
+          label.textContent = "Year: " + slider.value;
+          });
+        </script>
+
       </div>
     </div>
     <div id="settings" class="panel" style="display: none;">
@@ -315,12 +326,6 @@
         </label>
       </div>
     </div>
-    <!-- Bottom links similar to climate data site -->
-    <div id="bottom-links">
-      <a href="#">Recent locations</a>
-      <a href="#">About our data</a>
-      <a href="#">Support</a>
-    </div>
   </div>
 
   <!-- Main content area including top bar, search, notes and map -->
@@ -331,7 +336,7 @@
         <div class="logo-icon"></div>
         <div class="logo-text">Climate Data</div>
       </div>
-      <div id="title">Marine Climate Projections / Relative Sea‑Level Change</div>
+      <div id="title">Marine Climate Projections / Relative Sea-Level Change</div>
       <div class="button-group">
         <button class="share">Share</button>
         <button class="download">Download</button>
@@ -341,10 +346,6 @@
     <div id="search-bar">
       <input type="text" id="search-input" placeholder="Zoom to a location, region, city, coordinates..." />
       <button id="search-button">Search</button>
-    </div>
-    <!-- Note banner -->
-    <div id="note">
-      <strong>Note:</strong> Issue with St. Lawrence River CMIP6 relative sea‑level change. <span>Read more</span>
     </div>
     <!-- Map container -->
     <div id="map-container">
@@ -426,8 +427,15 @@
     // Update time label when slider moves
     var timeSlider = document.getElementById('time-slider');
     var timeLabel = document.getElementById('time-label');
+
+    // Use input so it updates while dragging, and format the display
     timeSlider.addEventListener('input', function() {
-      timeLabel.textContent = this.value;
+      timeLabel.textContent = 'Year: ' + this.value;
+    });
+
+    // Initialize label on load (in case value changed or set programmatically)
+    document.addEventListener('DOMContentLoaded', function() {
+      timeLabel.textContent = 'Year: ' + timeSlider.value;
     });
 
     // Toggle legend panel visibility
